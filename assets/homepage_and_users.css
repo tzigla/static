@@ -1,0 +1,538 @@
+@charset "UTF-8";
+fuckyouutf8 {
+  fo: reals;
+}
+
+fuckyouutf8 {
+  fo: reals;
+}
+
+html#c_boards.a_index, html#c_users, html#c_sessions, html#c_real_world {
+  overflow: auto;
+  background-color: #111111;
+}
+html#c_boards.a_index #header_container, html#c_users #header_container, html#c_sessions #header_container, html#c_real_world #header_container {
+  width: 762px;
+  margin-left: -11px;
+  margin-top: -10px;
+}
+html#c_boards.a_index body, html#c_users body, html#c_sessions body, html#c_real_world body {
+  width: 740px;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: #222222;
+  border-left: solid 1px #252525;
+  border-right: solid 1px #252525;
+  -moz-box-shadow: 0px 0px 8px 0 #333333;
+  -webkit-box-shadow: 0px 0px 8px 0 #333333;
+  -o-box-shadow: 0px 0px 8px 0 #333333;
+  box-shadow: 0px 0px 8px 0 #333333;
+}
+html#c_boards.a_index #zomg, html#c_users #zomg, html#c_sessions #zomg, html#c_real_world #zomg {
+  position: absolute;
+  top: 120px;
+}
+html#c_boards.a_index #head, html#c_users #head, html#c_sessions #head, html#c_real_world #head {
+  margin-top: 30px;
+}
+html#c_boards.a_index #head h1, html#c_users #head h1, html#c_sessions #head h1, html#c_real_world #head h1 {
+  font: normal 48px "Gill Sans", "Gill Sans MT", GillSans, Calibri, "Trebuchet MS", sans-serif;
+  color: #e4e5cc;
+  text-align: center;
+  margin: 10px -11px 40px -11px;
+  padding: 0px 10px 5px 10px;
+  text-align: center;
+}
+html#c_boards.a_index #head h1 small, html#c_users #head h1 small, html#c_sessions #head h1 small, html#c_real_world #head h1 small {
+  color: #999999;
+}
+html#c_boards.a_index #head h1 strong, html#c_users #head h1 strong, html#c_sessions #head h1 strong, html#c_real_world #head h1 strong {
+  font-weight: normal;
+}
+
+html#c_users #head h1 small {
+  font-size: 36px;
+}
+html#c_users section h2 {
+  margin: 32px 0 14px 0;
+  font: normal 20px "Gill Sans", "Gill Sans MT", GillSans, Calibri, "Trebuchet MS", sans-serif;
+}
+html#c_users #notifications {
+  width: 370px;
+  margin-bottom: 4px;
+  font-size: 10px;
+  color: #aaaaaa;
+}
+html#c_users #notifications strong {
+  color: #d09070;
+  font-size: 14px;
+  font-weight: normal;
+}
+html#c_users #notifications ul {
+  margin-left: 40px;
+  margin-bottom: 14px;
+}
+html#c_users #notifications .intro p {
+  margin-bottom: 4px;
+}
+html#c_users #notifications .token_present {
+  color: #86b48a;
+}
+html#c_users #notifications .nospam {
+  clear: both;
+  width: 250px;
+  padding-top: 4px;
+  margin-left: 40px;
+  color: #666666;
+}
+html#c_users #notifications .nospam p {
+  margin-bottom: 2px;
+}
+html#c_users #notifications form {
+  overflow: hidden;
+  *zoom: 1;
+}
+html#c_users #notifications form input[type=text] {
+  width: 230px;
+  margin: 0;
+  color: #cccccc;
+  border: none;
+  border-bottom: dashed 1px #39aab9;
+  background-color: #555555;
+  position: relative;
+  top: -2px;
+  padding: 1px 3px 2px 3px;
+  font-size: 12px;
+  margin-bottom: -2px;
+}
+html#c_users #notifications .fields, html#c_users #notifications span {
+  float: left;
+}
+html#c_users #notifications .spinner {
+  height: 21px;
+  margin-left: 100px;
+}
+html#c_users #notifications label {
+  float: left;
+  width: 40px;
+  font-size: 11px;
+  line-height: 20px;
+}
+html#c_users #notifications .error, html#c_users #notifications .reset {
+  margin-left: 40px;
+}
+html#c_users #notifications .error {
+  height: 13px;
+  color: #d16e7c;
+}
+html#c_users #notifications .reset {
+  color: #86b48a;
+}
+html#c_users #notifications form input[type=text]:focus, html#c_users #account form textarea:focus {
+  background-color: #666666;
+  border-color: #6dc6d2;
+}
+html#c_users.DESKTOP #notifications form input[type=text]:hover, html#c_users.DESKTOP #account form textarea:hover {
+  background-color: #666666;
+  border-color: #6dc6d2;
+}
+html#c_users #account_data {
+  display: table;
+  margin-top: 26px;
+  margin-bottom: 60px;
+}
+html#c_users #account_data h2:first-child {
+  margin-top: 0;
+}
+html#c_users #account_data li {
+  list-style-type: none;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+html#c_users #account_data li p {
+  margin-bottom: 4px;
+}
+html#c_users #account, html#c_users #linked {
+  display: table-cell;
+  width: 375px;
+}
+html#c_users #account {
+  border-right: 1px solid #666666;
+}
+html#c_users #account .name {
+  overflow: hidden;
+  *zoom: 1;
+}
+html#c_users #account .description {
+  float: left;
+}
+html#c_users #account form {
+  display: table;
+}
+html#c_users #account form textarea {
+  width: 290px;
+  height: 110px;
+  padding: 1px 3px 2px 3px;
+  margin-right: 4px;
+  background-color: #555555;
+  border: none;
+  border-bottom: dashed 1px #39aab9;
+  font-size: 12px;
+  color: #cccccc;
+}
+html#c_users #account form p {
+  margin-top: 4px;
+  text-align: center;
+  font-size: 10px;
+  color: #996666;
+}
+html#c_users #account .note {
+  clear: both;
+  padding-top: 4px;
+  font-size: 10px;
+  color: #666666;
+}
+html#c_users #linked {
+  padding-left: 10px;
+}
+html#c_users .avatar {
+  margin-right: 6px;
+  float: left;
+}
+html#c_users #user_info {
+  padding: 6px;
+}
+html#c_users #user_info h1 .back {
+  display: none;
+  margin-left: 4px;
+  font: normal 10px Verdana, Helvetica, Arial, sans-serif;
+  color: #999999;
+  text-decoration: underline;
+}
+html#c_users #user_info .details {
+  padding-left: 136px;
+}
+html#c_users #user_info .details .avatar {
+  margin-left: -136px;
+  height: 130px;
+  width: 130px;
+  overflow: hidden;
+}
+html#c_users #user_info .info {
+  display: table;
+}
+html#c_users #user_info .info h2 {
+  margin-top: 0;
+}
+html#c_users #user_info .info .general, html#c_users #user_info .info .description {
+  display: table-cell;
+  padding: 0 10px;
+  vertical-align: top;
+}
+html#c_users #user_info .info .description {
+  border-left: 1px solid #666666;
+}
+html#c_users #user_info .providers {
+  clear: both;
+  padding-top: 8px;
+  font: normal 11px Verdana, Helvetica, Arial, sans-serif;
+}
+html#c_users #tiles {
+  margin-bottom: 60px;
+}
+html#c_users #tiles h2 {
+  clear: both;
+}
+html#c_users #tiles h2 small {
+  font-size: 14px;
+  color: #999999;
+}
+html#c_users #tiles h2 .board small {
+  display: none;
+  color: #666666;
+}
+html#c_users #tiles p {
+  color: #999999;
+}
+html#c_users #tiles ul {
+  overflow: hidden;
+  *zoom: 1;
+}
+html#c_users #tiles ul li {
+  list-style-type: none;
+  float: left;
+  margin: 0 8px 8px 0;
+}
+html#c_users #tiles ul li a {
+  text-decoration: none;
+}
+html#c_users #tiles ul li a .img {
+  margin-bottom: 4px;
+  background-color: black;
+}
+html#c_users #tiles ul li a small {
+  color: #666666;
+}
+html#c_users.DESKTOP #tiles h2 .board:hover small {
+  display: inline;
+}
+
+html#c_sessions .providers li {
+  list-style-type: none;
+  margin: 10px 0 10px 30px;
+}
+html#c_sessions #sign_in {
+  width: 320px;
+  margin: 0 auto;
+}
+html#c_sessions #sign_in h2 {
+  font-size: 12px;
+  font-weight: normal;
+}
+html#c_sessions #security_note {
+  margin-top: 24px;
+}
+html#c_sessions #security_note li {
+  margin-left: 7px;
+}
+
+html#c_boards.a_index #request_link {
+  display: none;
+}
+html#c_boards.a_index #head {
+  position: relative;
+}
+html#c_boards.a_index #head #nowwitheditor {
+  position: absolute;
+  left: 100%;
+  top: -8px;
+  width: 154px;
+  float: left;
+  padding: 4px 8px;
+  background-color: #409c49;
+  border-color: #193e1d;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px;
+  color: #d8ebda;
+  font: normal 16px "Gill Sans", "Gill Sans MT", GillSans, Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+html#c_boards.a_index #head #nowwitheditor strong {
+  display: inline-block;
+  text-decoration: underline;
+  font-weight: normal;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+html#c_boards.a_index #head #nowwithrequestboard {
+  position: absolute;
+  left: 100%;
+  top: 230px;
+  width: 154px;
+  float: left;
+  padding: 16px 8px 4px 8px;
+  background-color: #d36027;
+  border-color: #cf9c82;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px;
+  color: #dddddd;
+  font: normal 16px "Gill Sans", "Gill Sans MT", GillSans, Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  line-height: 22px;
+}
+html#c_boards.a_index #head #nowwithrequestboard strong {
+  display: inline-block;
+  text-decoration: underline;
+  font-weight: normal;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+html#c_boards.a_index #featured h1 {
+  font: normal 20px "Gill Sans", "Gill Sans MT", GillSans, Calibri, "Trebuchet MS", sans-serif;
+  color: #e4e5cc;
+}
+html#c_boards.a_index #featured h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+html#c_boards.a_index #featured .img {
+  display: table-cell;
+  vertical-align: top;
+}
+html#c_boards.a_index #featured .img > a {
+  display: block;
+}
+html#c_boards.a_index #featured .img > a img {
+  display: block;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+}
+html#c_boards.a_index #featured .details {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  padding-left: 20px;
+}
+html#c_boards.a_index #featured .details p {
+  margin: 4px 0 8px 20px;
+  line-height: 1.5;
+  color: #999999;
+}
+html#c_boards.a_index #featured .details p a {
+  padding: 1px 0 2px 0;
+  color: #aaaaaa;
+  text-decoration: none;
+}
+.DESKTOP html#c_boards.a_index #featured .details p a:hover {
+  text-decoration: underline;
+}
+html#c_boards.a_index #featured .details .description p {
+  margin-left: 0;
+  line-height: inherit;
+}
+html#c_boards.a_index #featured .details .description p, html#c_boards.a_index #featured .details .description p a {
+  color: #666666;
+}
+html#c_boards.a_index #featured .draw, html#c_boards.a_index #featured .private {
+  margin-top: 40px;
+}
+html#c_boards.a_index #featured .private p a {
+  text-decoration: underline;
+}
+html#c_boards.a_index #featured .private h2 {
+  font-size: 12px;
+  font-weight: normal;
+}
+html#c_boards.a_index #featured .footer {
+  overflow: hidden;
+  *zoom: 1;
+  width: 400px;
+  padding-top: 6px;
+}
+html#c_boards.a_index #featured .footer .shareme {
+  float: left;
+  margin-left: 4px;
+}
+html#c_boards.a_index #featured .footer .license {
+  float: right;
+  padding: 0;
+  margin-top: -1px;
+  margin-right: 4px;
+}
+html#c_boards.a_index #drawyo, html#c_boards.a_index #complete_boards, html#c_boards.a_index #footer {
+  clear: both;
+  margin: 40px -11px 60px -11px;
+  color: #999999;
+}
+html#c_boards.a_index #drawyo header, html#c_boards.a_index #complete_boards header, html#c_boards.a_index #footer header {
+  margin: 20px 0;
+  padding: 0 10px;
+  background-color: #333333;
+  border-top: solid 1px #444444;
+  border-bottom: solid 1px #444444;
+  -moz-box-shadow: -1px 0px 4px 1px #111111;
+  -webkit-box-shadow: -1px 0px 4px 1px #111111;
+  -o-box-shadow: -1px 0px 4px 1px #111111;
+  box-shadow: -1px 0px 4px 1px #111111;
+}
+html#c_boards.a_index #drawyo header h1, html#c_boards.a_index #complete_boards header h1, html#c_boards.a_index #footer header h1 {
+  display: block;
+  margin: 0 auto;
+  padding: 0px 0 4px 0;
+  color: #cacbb2;
+  font: normal 36px "Gill Sans", "Gill Sans MT", GillSans, Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+html#c_boards.a_index #drawyo header h1 small, html#c_boards.a_index #complete_boards header h1 small, html#c_boards.a_index #footer header h1 small {
+  color: #999999;
+  font-size: 24px;
+}
+html#c_boards.a_index #drawyo header h1 a, html#c_boards.a_index #complete_boards header h1 a, html#c_boards.a_index #footer header h1 a {
+  color: #cacbb2;
+  font-size: 32px;
+}
+html#c_boards.a_index #drawyo section, html#c_boards.a_index #complete_boards section, html#c_boards.a_index #footer section {
+  vertical-align: top;
+  display: table-cell;
+  width: 375px;
+  padding: 0 10px;
+}
+html#c_boards.a_index #drawyo section h1, html#c_boards.a_index #complete_boards section h1, html#c_boards.a_index #footer section h1 {
+  margin-bottom: 16px;
+  font-size: 18px;
+  color: #666666;
+}
+html#c_boards.a_index #drawyo section h1 a, html#c_boards.a_index #complete_boards section h1 a, html#c_boards.a_index #footer section h1 a {
+  color: inherit;
+}
+html#c_boards.a_index #drawyo section li, html#c_boards.a_index #complete_boards section li {
+  list-style-type: none;
+  display: table;
+  margin-bottom: 20px;
+}
+html#c_boards.a_index #drawyo section li .img, html#c_boards.a_index #complete_boards section li .img {
+  vertical-align: top;
+  display: table-cell;
+  padding-right: 10px;
+}
+html#c_boards.a_index #drawyo section li .img img, html#c_boards.a_index #complete_boards section li .img img {
+  display: block;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+}
+html#c_boards.a_index #drawyo section li .details, html#c_boards.a_index #complete_boards section li .details {
+  vertical-align: top;
+  display: table-cell;
+  padding-left: 10px;
+}
+html#c_boards.a_index #drawyo section li .details .title, html#c_boards.a_index #complete_boards section li .details .title {
+  margin-left: -10px;
+  margin-bottom: 4px;
+}
+html#c_boards.a_index #drawyo section li .details .title a, html#c_boards.a_index #complete_boards section li .details .title a {
+  color: #d3d4bb;
+  font-size: 12px;
+}
+html#c_boards.a_index #drawyo section li .details p, html#c_boards.a_index #complete_boards section li .details p {
+  margin: 0;
+  font-size: 10px;
+}
+html#c_boards.a_index #drawyo #advanced, html#c_boards.a_index #complete_boards #advanced {
+  border-right: solid 1px #666666;
+}
+html#c_boards.a_index #footer section {
+  padding: 0 20px;
+}
+html#c_boards.a_index #footer section h1 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+html#c_boards.a_index #footer section h1:first-child {
+  margin-top: 0;
+}
+html#c_boards.a_index #footer section a {
+  color: #cccccc;
+  text-decoration: none;
+}
+html#c_boards.a_index #footer section ul {
+  margin-left: 40px;
+}

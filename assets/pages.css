@@ -1,0 +1,26 @@
+@charset "UTF-8";
+fuckyouutf8 {
+  fo: reals;
+}
+
+body {
+  width: 480px;
+  margin: 0 auto 40px auto;
+}
+
+#header_container {
+  width: 480px;
+  border-bottom: solid 1px #555555;
+}
+
+#request_link {
+  display: none !important;
+}
+
+.text img {
+  vertical-align: bottom;
+}
+
+#c_remixes.a_show p.img {
+  text-align: center;
+}
