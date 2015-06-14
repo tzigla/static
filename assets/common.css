@@ -589,3 +589,24 @@ span.user > a {
   width: 16px;
   height: 16px;
 }
+
+
+/* static overrides */
+#footer {
+  margin-bottom: 0px !important;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border-top: solid 1px #111;
+  background-color: #1c1c1c;
+}
+
+#auth #feedback,
+#auth #current_user,
+#auth #request_link,
+#nowwithrequestboard,
+#info_bar,
+#xxx
+{
+  display: none !important;
+}
+
