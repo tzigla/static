@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>Tile loader</title>
+    <script type="text/javascript">
+      var domain = "http://" + document.location.host
+
+      function init() {
+        window.addEventListener("message", receive_message, false)
+        send_init_message()
+      }
+
+      function receive_message(event) {
+        if (event.origin !== domain) return
+
+        var data = JSON.parse(event.data)
+        if (data.action == 'load_tile') {
+          load_image(data.url)
+        } else if (data.action == 'upload_thumbnail') {
+          upload_thumbnail(data)
+        }
+      }
+
+      function load_image(url) {
+        image = document.createElement('img')
+        image.setAttribute('data-url', url)
+        image.onload = loaded
+        image.onerror = loaded
+        image.onabort = loaded
+        image.src = url
+        document.body.appendChild(image)
+      }
+
+      function loaded(e) {
+        var image = e.target
+        var canvas = document.createElement('canvas')
+        var size = image.width
+        canvas.width = canvas.height = size
+
+        var context = canvas.getContext('2d')
+        context.drawImage(image, 0, 0)
+        var image_bits = canvas.toDataURL()
+        var url = image.getAttribute('data-url')
+        send_loaded_message(url, image_bits)
+      }
+
+      function send_init_message() {
+        debug('proxy sends init')
+        send_message({ action: 'init' })
+      }
+
+      function send_loaded_message(url, bits) {
+        send_message({
+          action: 'tile_loaded',
+          url: url,
+          bits: bits
+        })
+      }
+
+      function send_message(message) {
+        parent.postMessage(JSON.stringify(message), domain)
+      }
+
+      function upload_thumbnail(fields) {
+        r = new XMLHttpRequest()
+        r.onreadystatechange = function() {
+          if (this.readyState != 4) return
+          send_message({
+            action: 'proxy',
+            method: 'GET',
+            url:    fields.redirect_to,
+          })
+        }
+
+        r.open('POST', fields.url)
+        r.sendCanvas(fields.data)
+      }
+
+      function debug(message) {
+        try {
+          console.log(message)
+        } catch (e) {}
+      }
+
+      XMLHttpRequest.prototype.sendCanvas = function(fields) {
+        BOUNDARY = "---------------------------1966284435497298061834782736"
+        rn = "\r\n"
+        req = "--" + BOUNDARY
+
+        for (key in fields) {
+          value = fields[key]
+          req += rn + "Content-Disposition: form-data; name=\"" + key + "\""
+
+          req += rn + rn + value + rn + "--" + BOUNDARY
+        }
+
+        req += "--"
+
+        this.setRequestHeader("Content-Type", "multipart/form-data; boundary=" + BOUNDARY)
+        this.send(req)
+      }
+
+      window.onload = init
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

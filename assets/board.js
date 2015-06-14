@@ -4048,16 +4048,14 @@ var __hasProp = Object.prototype.hasOwnProperty, __extends = function(child, par
 ProxyModel = function() {
   function ProxyModel() {
     this.element = $('#proxy').dom[0];
-    this.origin = this.element.getAttribute('data-origin');
+    this.origin = "http://" + document.location.host;
     this.proxy = null;
     _.bindAll(this, 'receive_message');
     window.addEventListener("message", this.receive_message, false);
   }
   __extends(ProxyModel, Backbone.Model);
   ProxyModel.prototype.start = function() {
-    var stamp;
-    stamp = (Math.random() + "").substr(-10);
-    return this.element.src = "" + this.origin + "/proxy.html?stamp=" + stamp;
+    return this.element.src = "" + this.origin + "/ytz/proxy.html";
   };
   ProxyModel.prototype.receive_message = function(event) {
     var data;
@@ -4214,7 +4212,7 @@ Tile = function() {
     if (type === 'secret_url') {
       return this.get('secret_url');
     }
-    return "http://" + S3_BUCKET + "/" + (this.key(type));
+    return "http://" + document.location.host + "/" + S3_BUCKET + "/" + (this.key(type));
   };
   Tile.prototype.urgent = function() {
     var urgency_threshold;
